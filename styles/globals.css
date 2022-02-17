@@ -1,16 +1,121 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-a {
-  color: inherit;
+
+nav{ 
+    font-family: 'PT Serif', serif;  
+    text-transform: uppercase;
+    cursor: pointer;
+  
+}
+/* .container{
+  margin: 0px 60px 0px 60px ;
+  padding: 0px 50px;
+} */
+.btn{
   text-decoration: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(
+  45deg
+, rgb(221, 77, 20) , tomato );
+  color: white;
+  font-weight: 300;
 }
+section{ 
+  height: 500px;
+}
+.second-section{
+   display: flex;
+   padding-left: 60px;
+}
+.third-section{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.numberOfParticipants{
+  padding-left:350px;
+} 
 
-* {
-  box-sizing: border-box;
+.nav-item{
+  padding-left: 60px;
+}
+.first-contain{
+   margin-top:12%;
+    width: 40%;
+    float: left;
+    margin-left: 2%;
+    padding-left: 2%;
+
+}
+.second-contain{
+  float: right;
+  width: 40%;
+}
+.navbar-nav{
+    padding-left:150px;
+}
+ nav a:hover{
+   color: red
+ }
+.entry{
+  display: flex;
+  padding-left: 150px;
+}
+.entry :visited{
+  background: rgb(212, 10, 10);
+}
+ .navbar{
+    margin-top: 2px;
+    width: 100%;
+    height: 70px;
+    padding-left: 50px; 
+  
+ }
+ a{
+   text-decoration: none;
+   color: rgb(102, 18, 18);
+  
+ }
+ .signup{
+  background-image: linear-gradient(
+    45deg
+  , rgb(221, 77, 20) , tomato );
+   color : white;
+   font-weight: 300;
+    /* height: 35px;  */
+   margin-left: 50px;
+   padding: 2px;
+   border-radius: 10%;
+ }
+ .sign-up{
+
+ }
+ form{
+   width: 350px;
+   margin-left:350px;
+   margin-right:600px;
+
+ }
+ form label{
+   display: flex;
+   margin-top: 20px;
+   font-size:18px
+ }
+form input{
+  width: 100%;
+  padding:7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius:6px;
+  outline: none;
+}
+input[type="button"]{
+  width: 350px;
+  height:35px;
+  margin-top:20px;
+  border: none;
+  background-image: linear-gradient(
+    45deg
+  , rgb(221, 77, 20) , tomato );
 }

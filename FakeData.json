@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "product_name": "Ibanez XPTB620",
+        "img": "https://www.ibanez.com/common/product_artist_file/file/p_region_XPTB620_BKF_1P_01.png?_size=1",
+        "price": "BDT 85000",
+        "quantity": "20"
+    },
+    {
+        "id": 2,
+        "product_name": "Ibanez QX527PB",
+        "img": "https://www.ibanez.com/common/product_artist_file/file/p_region_QX527PB_ABS_1P_01.png?_size=1",
+        "price": "BDT 90000",
+        "quantity": "15"
+    },
+    {
+        "id": 3,
+        "product_name": "Ibanez GSA60",
+        "img": "https://www.ibanez.com/common/product_artist_file/file/p_region_GSA60_WNF_2Y_04.png?_size=1",
+        "price": "BDT 35000",
+        "quantity": "10"
+    },
+    {
+        "id": 4,
+        "product_name": "Ibanez SRMS805 ",
+        "img": "https://www.ibanez.com/common/product_artist_file/file/p_region_SRMS805_DTW_1P_03_sub_1.jpg",
+        "price": "BDT 50000",
+        "quantity": "30"
+    },
+    {
+        "id": 5,
+        "product_name": "Ibanez SR2600",
+        "img": "https://www.ibanez.com/common/product_artist_file/file/p_region_SR2600_CBB_1P_03_sub_1.jpg",
+        "price": "BDT 90000",
+        "quantity": "55"
+    },
+    {
+        "id": 6,
+        "product_name": "YAMAHA Genos V2.1",
+        "img": "https://usa.yamaha.com/files/Img27413_6e95e4026d346252b29b4b4a3d8b819b.jpg?impolicy=resize&imwid=2000&imhei=800",
+        "price": "BDT 80000",
+        "quantity": "35"
+    },
+    {
+        "id": 7,
+        "product_name": "YAMAHA PSR-A3000",
+        "img": "https://www.yamaha.com/yamahavgn/PIM/Images/D8DA0F2E7C594CC189BF20B52C2DAF32_12075_735x735_264e44d0967a2b6188b7644be93483ce.jpg",
+        "price": "BDT 90000",
+        "quantity": "15"
+    },
+    {
+        "id": 8,
+        "product_name": "YAMAHA Live Custom Hybrid Oak",
+        "img": "https://usa.yamaha.com/files/Image-index_LCHO_1080x1080_396x396_e541c7b9c762c291e84ff8dac8b09337.jpg",
+        "price": "BDT 90000",
+        "quantity": "90"
+    },
+    {
+        "id": 9,
+        "product_name": "YAMAHA Absolute Hybrid Maple ",
+        "img": "https://usa.yamaha.com/files/Absolute%20Hybrid%20Maple_540x540_396x396_86a43875cbf4ba8fce9ed2ff3d621a72.jpg",
+        "price": "BDT 60000",
+        "quantity": "30"
+    },
+    {
+        "id": 10,
+        "product_name": "YAMAHA CSP-170",
+        "img": "https://www.yamaha.com/us/pianos/images/CSP-170_Polished%20Ebony.jpg",
+        "price": "BDT 70000",
+        "quantity": "30"
+    }
+]
