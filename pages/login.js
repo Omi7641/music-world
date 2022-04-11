@@ -8,6 +8,7 @@
 // import { useState } from 'react';
 // import { FacebookAuthProvider } from "firebase/auth";
 
+import Footer from "./footer";
 import Google from "./google";
 
 
@@ -141,6 +142,7 @@ import Google from "./google";
             </div> */}
             
             <p style={{marginLeft:'380px',marginTop:"50px",fontSize:"18px"}}>Not have an account? <a href="/signup">Sign Up Here</a> </p>
+             <Footer></Footer>
         </div>
      );
 }

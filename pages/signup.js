@@ -1,16 +1,17 @@
+import Footer from "./footer";
 import Google from "./google";
 
 const SignUp = () => {
     return ( 
         <div className="container">
-            <div style={{textAlign: 'center', padding:"20px"}}>
+            <div style={{marginLeft: '380px', padding:"10px"}}>
                 <h1>
                 Create Account
                 </h1>
             </div>
             <div >
                 <div  style={{width: '500px'}}>
-                    <form className="sign-up">
+                <form className="sign-up">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" required/>
                 <label>Email</label>
@@ -38,7 +39,7 @@ const SignUp = () => {
                 <p style={{marginLeft:'30px'}}>Already have an account ? <a href="/login">Login here</a></p>
             </div>
           
-       
+        <Footer></Footer>
        
         </div>
      );

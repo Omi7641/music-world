@@ -7,12 +7,15 @@ import Courses from './courses'
 import Link from 'next/link'
 import myData from '../pages/mydata.json'
 import { useState } from 'react'
+import Footer from './footer'
 
 
 
 export default function Home() {
 
     // const provider = new firebase.auth.GoggleAuthProvider();
+     
+    
 
   const datalist = myData.slice(0,3) ;
  const [instrument,setInstrument] = useState (datalist);
@@ -77,6 +80,7 @@ console.log("myData: ",myData);
               </div>
                      <a href="../instrument" style={{textAlign:'center'}}>See more </a>
        </section>
+       <Footer></Footer>
     </div>
   )
 }

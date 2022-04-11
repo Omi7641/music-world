@@ -117,5 +117,70 @@ input[type="button"]{
   border: none;
   background-image: linear-gradient(
     45deg
-  , rgb(221, 77, 20) , tomato );
+  , rgb(221, 77, 20) , rgb(255, 99, 71) );
+}
+.row1{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  padding:50px;
+  font-size:20px;
+}
+.footer-col li{
+  list-style:none;
+}
+.footer-col h4{
+   padding-left:30px;
+   color:rgb(255, 99, 71);
+}
+.foot-middle{
+  padding-left:250px;
+}
+textarea{
+  height:80px;
+  width: 350px;
+}
+.shop-container{
+  display: flex; 
+ 
+}
+.product-container{
+    margin-left:50px;
+    height:20%;
+    width: 70%;
+    margin-top:20px;
+    border-right: 1px solid lightgray;
+}
+.cart-container{
+
+     margin-left:50px;
+     margin-top:20px;
+}
+
+.product{
+  display:flex;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+  padding-bottom:10px;
+}
+.details-part{
+  margin-left:10px;
+  margin-top: 50px;
+ 
+}
+.details-part h5{
+  color: rgb(102, 18, 18);
+  /* color: rgb(240, 78, 49); */
+}
+.button{
+  width: 200px;
+  height:35px;
+  margin-top:20px;
+  border: none;
+  border-radius:5%;
+  background-image: linear-gradient(
+    45deg
+  , rgb(221, 77, 20) , rgb(255, 99, 71) );
 }

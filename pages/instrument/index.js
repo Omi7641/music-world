@@ -2,88 +2,49 @@
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../context";
+import Footer from "../footer";
 import myData from '../mydata.json'
-import InstrumentDetails from "./instrumentDetails";
-
-
-// export const getStaticProps = async () => {
-//      const res= await fetch ('https://jsonplaceholder.typicode.com/users');
-//      const data = await res.json();
- 
-//      return {
-//          props : {ninja : data}
-//      }
-//  }
-// const data= myData;
-
-// export const getStaticProps = async () => {
-//      const res= await fetch (myData);
-//      const data = await res.json();
- 
-//      return {
-//          data
-//      }
-//  }
- 
+import { myContext } from "../_app";
+import Instrumental from "./instrumental";
+import InstrumentDetails from "./instrumental";
+import InstrumentCart from "./instrumentCart";
 
 const Instrument = ( ) => {
-//  const { instrument = [] } = data;
-//  console.log( 'data',data);
- const styles ={
-        marginTop:'20px',
-     //    border: '1px solid blue',
-        width: '40%',
-     //    borderRadius: '30px',
-        float: 'left',
-        margin: '50px',
-        height: '30%',
-        padding: '10px',
-        
- };
+
+ const data = myData ;
+
+ const {instrumentState}=useContext(myContext);
+ const [instrument,setInstrument]=instrumentState;
+ const [cart,setCart]=useState([]);
+
+ useEffect(()=>{
+     setInstrument(data);
+ },[])
+
  
-const [instrument,setInstrument]=useContext(UserContext);
-
-// const data = myData ;
-//  const [instrument,setInstrument] =useState (data);
-// console.log("myData: ",myData);
-
+ const handleAddInstrument = (product) => {
+   const newCart = [...cart,product];
+   setCart(newCart);
+ }
     return ( 
-         <>
-      <h1 style={{textAlign: 'center',marginTop:'20px'}}>Buy Instrument</h1> 
-   
-      <div>
+      <>
+         <div className="shop-container">  
+           <div className="product-container">
          
            {
-             instrument.map((instrument) => 
-                  { return <div key={instrument.id}> 
+             instrument.map(instrument => 
+                     <div key={instrument.id}><Instrumental handleAddInstrument={handleAddInstrument}  instrument={instrument}></Instrumental>  
+            </div> )          
+}
+            </div>   
  
-              <div >
-                    <div className="col" >
-                    <div className="card h-100"  style={styles}>
-                         
-                         <img src={instrument.img} width={500} height={200} className="card-img-top" alt={instrument.product_name} />
-                         <div className="card-body">
-                         <h5 className="card-title">{instrument.product_name}</h5>
-                         <p className="card-text">{instrument.about}</p>
-                         <p> Quantity : {instrument.quantity}</p>
-                        
-                         </div>
-                         <div className="card-footer" style ={{backgroundColor:'pink',color:'red'}}>
-                         <btn style={{padding:'160px',}} className="text-muted">{instrument.price}</btn>
-                       
-                         </div>
-                    </div>
-                    </div>
-                    
-            </div> 
-    </div> })
-} 
-      </div>
-           
-               <div>
-                    
-               </div> 
-        </> 
+                   <div className='cart-container'>
+                       <InstrumentCart cart={cart}></InstrumentCart>
+                  </div>  
+         
+        </div> 
+        <Footer></Footer>
+        </>
      ); 
     
 }

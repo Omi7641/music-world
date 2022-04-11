@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../pages/img/logo.png";
+import ProductDetails from "../pages/instrument/[productdetails]";
 
 const Navbar = () => {
     return ( 
@@ -34,6 +35,10 @@ const Navbar = () => {
                     <li className="nav-item">
                          <Link className="nav-link " href="/contact">Contact</Link>
                     </li>
+                    <li className="nav-item">
+                         <Link className="nav-link " href="/inventory">Inventory</Link>
+                    </li>
+
 
                     <div className="entry"> 
                     <li className="nav-item ">
@@ -43,12 +48,12 @@ const Navbar = () => {
                     <li className="nav-item signup ">
                          <Link className="nav-link " href="/signup">Sign Up</Link>
                     </li>
-                   
-                    </ul>
+                 </ul>
                </div>
                </div>
                </nav>
                </div>     
+             
        </nav>
      );
 }
